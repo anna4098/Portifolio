@@ -1,0 +1,91 @@
+/* Container para centralizar os itens */
+.container {
+    display: flex;
+    flex-direction: column; /* Para alinhar verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center; /* Alinha o texto no centro */
+}
+
+/* Estilo para a imagem */
+.imagem {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px;
+    border: 5px solid #000000; /* Aumenta a borda ao redor do formulário */
+    box-shadow: 0 0px 100px rgba(0, 0, 0, 0.2);
+
+}
+
+/* Estilo para o texto */
+.texto-sobre {
+    font-weight: normal;
+    font-size: 30pxpx;
+    font-style: normal;
+    /* border-radius: 20px; */
+    margin-top: 25px; /* Adiciona um espaço acima do texto, se necessário */
+    margin-left: 250px;
+    margin-right: 250px;
+    text-align: justify;
+   
+}
+
+/* Estilo para o footer */
+.footer {
+    width: 100%; /* Corrigido de 15pxpx para 100% */
+    height: 20px;
+}
+
+/* Estilos do rodapé */
+.rodape h4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    background-color: #ffdcdc;
+    padding: 25px;
+    margin-top: 0; /* Ajustado o espaço entre o conteúdo acima e o rodapé */
+}
+
+.rodape-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #bb0935; /* Cor do texto no rodapé */
+    margin: 0 5px; /* Reduzido o espaço horizontal entre os itens do rodapé */
+}
+
+.rodape-item h4 {
+    font-family: "Bebas Neue", sans-serif; /* Aplica Bebas Neue ao título do rodapé */
+    font-size: 14px;
+    margin-bottom: 3px; /* Reduzido o espaço abaixo do título */
+    border: 1px solid #000000; /* Adiciona borda ao título do rodapé */
+    padding: 2px 6px; /* Reduzido o padding */
+    border-radius: 5px; /* Bordas arredondadas (opcional) */
+}
+
+.rodape-item a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #000000; /* Cor do texto do link */
+    transition: color 0.3s ease; /* Suaviza a transição da cor ao passar o mouse */
+}
+
+.rodape-item a:hover {
+    color: #000000; /* Cor do texto ao passar o mouse */
+}
+
+.imagens-rodape {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    gap: 20px; /* Ajuste o espaço entre as imagens conforme necessário */
+    padding: 5px;
+    width: 100%; /* Faz com que o contêiner de imagens ocupe toda a largura disponível */
+}
+
+.imagens-rodape img {
+    width: 30px; /* Reduzido a largura dos ícones das redes sociais */
+    height: auto;
+    margin: 0; /* Remove a margem adicional ao redor das imagens */
+}
+
+.linksredessociais {
+    display: inline-block; /* Faz com que as imagens se alinhem corretamente */
+}

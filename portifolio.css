@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "DM Serif Display", serif; /* Fonte padrão para o corpo */
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #ebd4d4;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #ffdcdc;
+    padding: 20px 30px; /* Ajustado para corresponder ao layout desejado */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    color: #bb0935;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif; /* Aplica Bebas Neue à logo */
+    border: 2px solid #bb0935; /* Adiciona borda à logo */
+    padding: 5px 8px; /* Ajustado para corresponder ao layout desejado */
+    border-radius: 5px; /* Bordas arredondadas (opcional) */
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin: 0 20px; /* Ajustado para corresponder ao layout desejado */
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    font-family: "Bebas Neue", sans-serif; /* Aplica Bebas Neue ao menu */
+    border: 1px solid #000000; /* Adiciona borda aos itens do menu */
+    padding: 5px 10px; /* Ajustado para corresponder ao layout desejado */
+    border-radius: 5px; /* Bordas arredondadas (opcional) */
+}
+
+.menu a:hover {
+    color: #bb0935;
+}
+
+/* Estilos da seção principal */
+section#sobre {
+    flex: 1; /* Faz com que o conteúdo principal ocupe o espaço disponível */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    justify-content: center; /* Centraliza verticalmente o conteúdo dentro da seção */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 40px 20px; /* Ajustado para corresponder ao layout desejado */
+}
+
+/* Estilo dos títulos */
+h3 {
+    font-family: "Rajdhani", sans-serif; /* Aplica Rajdhani ao texto do h3 */
+    font-size: 20px; /* Ajuste o tamanho conforme necessário */
+    color: #000000; /* Ajusta a cor para preto para contraste */
+    margin: 15px 0; /* Reduzido o espaço acima e abaixo do título */
+    border-left: 4px solid #bb0935; /* Adiciona borda à esquerda do título */
+    padding-left: 8px; /* Reduzido o padding à esquerda */
+    display: inline-block; /* Faz o título ajustar-se ao conteúdo */
+}
+
+/* Estilos da galeria */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px; /* Ajustado para corresponder ao layout desejado */
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    margin-top: 20px; /* Ajustado para corresponder ao layout desejado */
+    margin-bottom: 60px; /* Ajustado para corresponder ao layout desejado */
+}
+
+.galeria a {
+    display: block; /* Faz o link ocupar o espaço total do vídeo */
+}
+
+.galeria video {
+    width: 300px; /* Ajustado para corresponder ao layout desejado */
+    height: auto; /* Mantém a proporção do vídeo */
+    border: 3px solid #000000; /* Adiciona uma borda ao redor dos vídeos */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    cursor: pointer; /* Adiciona um cursor de mão para indicar que o vídeo pode ser clicado */
+    transition: transform 0.3s ease; /* Adiciona uma animação suave ao clicar */
+    border: 5px solid #000000; /* Aumenta a borda ao redor do formulário */
+    box-shadow: 0 0px 100px rgba(0, 0, 0, 0.2);
+}
+
+.galeria video:hover {
+    transform: scale(1.05); /* Aumenta o tamanho do vídeo ligeiramente ao passar o mouse */
+}
+
+
+/* Estilos do rodapé */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    background-color: #ffdcdc;
+    padding: 25px;
+    margin-top: 0; /* Ajustado o espaço entre o conteúdo acima e o rodapé */
+}
+
+.rodape-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #bb0935; /* Cor do texto no rodapé */
+    margin: 0 5px; /* Reduzido o espaço horizontal entre os itens do rodapé */
+}
+
+.rodape-item h4 {
+    font-family: "Bebas Neue", sans-serif; /* Aplica Bebas Neue ao título do rodapé */
+    font-size: 14px;
+    margin-bottom: 3px; /* Reduzido o espaço abaixo do título */
+    border: 1px solid #000000; /* Adiciona borda ao título do rodapé */
+    padding: 2px 6px; /* Reduzido o padding */
+    border-radius: 5px; /* Bordas arredondadas (opcional) */
+}
+
+.rodape-item a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #000000; /* Cor do texto do link */
+    transition: color 0.3s ease; /* Suaviza a transição da cor ao passar o mouse */
+}
+
+.rodape-item a:hover {
+    color: #000000; /* Cor do texto ao passar o mouse */
+}
+
+.imagens-rodape {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    gap: 20px; /* Ajuste o espaço entre as imagens conforme necessário */
+    padding: 5px;
+    width: 100%; /* Faz com que o contêiner de imagens ocupe toda a largura disponível */
+}
+
+.imagens-rodape img {
+    width: 30px; /* Reduzido a largura dos ícones das redes sociais */
+    height: auto;
+    margin: 0; /* Remove a margem adicional ao redor das imagens */
+}
+
+.linksredessociais {
+    display: inline-block; /* Faz com que as imagens se alinhem corretamente */
+}
+
+/* Media Queries */
+
+/* Ajustes para telas grandes (por exemplo, tablets e menores) */
+@media (max-width: 1200px) {
+    .gradiente {
+        width: 100%;
+    }
+}
+
+/* Ajustes para telas médias (por exemplo, tablets em modo paisagem) */
+@media (max-width: 992px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin: 5px 0; /* Reduzido o espaço entre os itens do menu */
+    }
+
+    .search-box {
+        margin-left: 0;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .photo-gallery,
+    .galeria-horizontal,
+    .photoshop,
+    .video-grid,
+    .video-grid-h {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .chcolate img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-links {
+        margin-top: 1rem;
+    }
+}
+
+/* Ajustes para telas pequenas (por exemplo, smartphones) */
+@media (max-width: 768px) {
+    header img {
+        height: 40px;
+    }
+
+    nav ul li {
+        margin: 0 10px; /* Reduzido o espaço entre itens do menu */
+    }
+
+    .search-txt {
+        width: 100%;
+    }
+
+    .photo-gallery,
+    .galeria-horizontal,
+    .photoshop,
+    .video-grid,
+    .video-grid-h {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .footer-content p {
+        font-size: 24px;
+    }
+}
+
+/* Ajustes para telas muito pequenas (por exemplo, smartphones em modo retrato) */
+@media (max-width: 576px) {
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .photo-item,
+    .foto,
+    .photo {
+        padding-top: 75%;
+    }
+
+    .chcolate img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-content p {
+        font-size: 20px;
+    }
+
+    .social-icon {
+        font-size: 1.5rem;
+    }
+}
