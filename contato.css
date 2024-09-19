@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffdcdc;
+    padding: 20px 30px; /* Corrigido: Adicionei unidades em '30px' */
+    border-bottom: 1px solid #ddd;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */ /* Descomentado se necessário */
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 24px;
+    text-decoration: none;
+    color: #c84057;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.menu a:hover {
+    color: #c84057;
+}
+
+main.contato-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 20px;
+}
+
+.form-contato {
+    flex: 1;
+    max-width: 600px;
+    background-color: #fcebeb;
+    border: 4px solid #000000; /* Aumenta a borda ao redor do formulário */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0px 100px rgba(0, 0, 0, 0.2);
+    margin: 40px auto;
+    max-width: 650px;
+}
+
+.form-contato h2 {
+    color: #c84057;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-contato form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-contato label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #434343;
+}
+
+.input-padrao {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.enviar {
+    background-color: #c84057;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.enviar:hover {
+    background-color: #91f6aa;
+}
+
+#galeria-contato {
+    flex: 2;
+    max-width: 600px;
+    gap: 10px; /* Reduzido o espaço entre as imagens */
+}
+
+.galeria2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 100px;
+    margin-bottom: 90px;
+}
+
+.galeria2 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 5px solid #000000; /* Aumenta a borda ao redor do formulário */
+}
+
+footer {
+    background-color: #33a8a8;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+
+}
+
+/* Estilos do rodapé */
+.rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    background-color: #ffdcdc;
+    padding: 25px;
+    margin-top: 0; /* Ajustado o espaço entre o conteúdo acima e o rodapé */
+}
+
+.rodape-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #bb0935; /* Cor do texto no rodapé */
+    margin: 0 5px; /* Reduzido o espaço horizontal entre os itens do rodapé */
+}
+
+.rodape-item h4 {
+    font-family: "Bebas Neue", sans-serif; /* Aplica Bebas Neue ao título do rodapé */
+    font-size: 14px;
+    margin-bottom: 3px; /* Reduzido o espaço abaixo do título */
+    border: 1px solid #000000; /* Adiciona borda ao título do rodapé */
+    padding: 2px 6px; /* Reduzido o padding */
+    border-radius: 5px; /* Bordas arredondadas (opcional) */
+}
+
+.rodape-item a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #000000; /* Cor do texto do link */
+    transition: color 0.3s ease; /* Suaviza a transição da cor ao passar o mouse */
+}
+
+.rodape-item a:hover {
+    color: #000000; /* Cor do texto ao passar o mouse */
+}
+
+.imagens-rodape {
+    display: flex;
+    justify-content: center; /* Centraliza as imagens horizontalmente */
+    gap: 20px; /* Ajuste o espaço entre as imagens conforme necessário */
+    padding: 5px;
+    width: 100%; /* Faz com que o contêiner de imagens ocupe toda a largura disponível */
+}
+
+.imagens-rodape img {
+    width: 30px; /* Reduzido a largura dos ícones das redes sociais */
+    height: auto;
+    margin: 0; /* Remove a margem adicional ao redor das imagens */
+}
+
+.linksredessociais {
+    display: inline-block; /* Faz com que as imagens se alinhem corretamente */
+}
